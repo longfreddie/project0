@@ -1,0 +1,44 @@
+a
+{
+    color:black;
+}
+a::hover
+{
+    color:blue;
+}
+
+@media print{
+    .screen-only{
+        display: none;
+    }
+}
+
+@media (min-width: 500px){
+    #namepage::before{
+        content: "Welcome To ";
+    }
+    #namepage::after{
+        content: "Page!";
+    }
+}
+
+@media (max-width: 499px){
+    #namepage::after{
+        content: "!";
+    }
+}
+
+span .hovering
+{
+    color:lightgrey;
+}
+
+.infoheader
+{
+    font-display: bold;
+}
+
+.hello
+{
+    font-size: 12px;
+}
